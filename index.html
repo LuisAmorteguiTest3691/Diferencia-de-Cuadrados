@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Diferencia de Cuadrados</title>
+
+  <!-- Configuración de MathJax para renderizar LaTeX -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$','$$'], ['\\[','\\]']]
+      }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <h1>Diferencia de Cuadrados</h1>
+
+  <div class="polynomial-container">
+    <label for="userPolynomial">
+      Ingrese una diferencia de cuadrados (ej. <em>9x^2 - 16y^2</em>):
+    </label><br>
+    <input type="text" id="userPolynomial" placeholder="Ej: 9x^2 - 16y^2" />
+    <button id="factorBtn">Factorizar</button>
+  </div>
+
+  <!-- Sección para mostrar el paso a paso -->
+  <div id="steps"></div>
+
+  <script src="js/script_diffSquares.js"></script>
+</body>
+</html>
